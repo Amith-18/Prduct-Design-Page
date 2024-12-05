@@ -1,0 +1,197 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", serif;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #d0eaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product{
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+
+.gallery{
+    flex-basis: 47%;
+    background: #241e20;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.gallery img{
+    width: 100%;
+    display: block;
+    /* padding: 100px 0 0; */
+    padding-top: 100px;
+}
+
+.details{
+    flex-basis: 53%;
+    background: #fff;
+    padding: 40px;
+    padding-right: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+}
+
+.details h1{
+    color: #333;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.details h2{
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.details h3{
+    color: #00d874;
+    margin: 10px 0;
+}
+
+.details form{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.size-select{
+    display: flex;
+    align-items: center;
+    margin: 50px 0 0;
+}
+
+.size-select p{
+    width: 70px;
+}
+
+.size-select input:checked + span{
+    color: blue;
+    font-weight: 600;
+}
+
+.size-select input{
+    display: none;
+}
+
+.size-select span{
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color-select{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.color-select p{
+    width: 75px;
+}
+
+.color-select span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.color-1{
+    background:red ;
+}
+
+.color-2{
+    background:yellow ;
+}
+
+.color-3{
+    background:blue ;
+}
+
+.color-4{
+    background:orange ;
+}
+
+.color-select input{
+    display: none;
+}
+
+.color-select input:checked + span{
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000 ;
+}
+
+.quantity-select{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity-select p{
+    width: 75px;
+}
+
+.quantity-select input{
+    background: #fff;
+    border: .1px solid #333;
+    border-radius: 6px;
+    outline: none;
+    padding: 2px 2px 2px 15px;
+    width: 50px;
+}
+
+form button{
+    background: #f70808;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    margin: 50px 0 0;
+    box-shadow: 0 10px 10px rgba(240, 39, 63, 0.25);
+    cursor: pointer;
+}
+
+.controls{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+
+.btn{
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn.active{
+    background: #553ff0;
+}
